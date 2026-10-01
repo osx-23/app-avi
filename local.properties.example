@@ -1,4 +1,4 @@
 # Copia como local.properties y no lo subas a Git.
 # sdk.dir=/Users/tu_usuario/Library/Android/sdk
-SUPABASE_URL=https://TU-PROYECTO.supabase.co
+SUPABASE_URL=https://jpgyhnfhdfsmcwgguavz.supabase.co
 SUPABASE_PUBLISHABLE_KEY=TU_PUBLISHABLE_KEY
