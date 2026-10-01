@@ -54,12 +54,12 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LifecycleRegistry
 import androidx.lifecycle.ViewModelStore
 import androidx.lifecycle.ViewModelStoreOwner
-import androidx.lifecycle.ViewTreeLifecycleOwner
-import androidx.lifecycle.ViewTreeViewModelStoreOwner
+import androidx.lifecycle.setViewTreeLifecycleOwner
+import androidx.lifecycle.setViewTreeViewModelStoreOwner
 import androidx.savedstate.SavedStateRegistry
 import androidx.savedstate.SavedStateRegistryController
 import androidx.savedstate.SavedStateRegistryOwner
-import androidx.savedstate.ViewTreeSavedStateRegistryOwner
+import androidx.savedstate.setViewTreeSavedStateRegistryOwner
 import com.osx23.avi.data.RegistroRepository
 import com.osx23.avi.model.Registro
 import com.osx23.avi.parser.VoiceCommandParser
@@ -364,9 +364,9 @@ class FloatingBubbleService : Service() {
         (value * resources.displayMetrics.density).toInt()
 
     private fun ComposeView.setOwners(owner: OverlayLifecycleOwner) {
-        ViewTreeLifecycleOwner.set(this, owner)
-        ViewTreeViewModelStoreOwner.set(this, owner)
-        ViewTreeSavedStateRegistryOwner.set(this, owner)
+        setViewTreeLifecycleOwner(owner)
+        setViewTreeViewModelStoreOwner(owner)
+        setViewTreeSavedStateRegistryOwner(owner)
     }
 }
 
