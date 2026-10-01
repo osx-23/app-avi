@@ -14,7 +14,15 @@ Aplicación Android nativa en Kotlin + Jetpack Compose para registrar fugas ráp
 ## Supabase
 1. Ejecuta `supabase/migrations/001_create_registros.sql`.
 2. Copia `local.properties.example` a `local.properties`.
-3. El proyecto configurado para AVI es `Oscar-h23's Project` (`jpgyhnfhdfsmcwgguavz`).\n4. Configura únicamente `SUPABASE_PUBLISHABLE_KEY` con la clave pública del proyecto.
+3. El proyecto configurado para AVI es `osx-23's Project`, con referencia `adozechgzkbqopujaapp`.
+4. Configura únicamente `SUPABASE_PUBLISHABLE_KEY` con la clave pública del proyecto.
+
+Configuración esperada:
+
+```properties
+SUPABASE_URL=https://adozechgzkbqopujaapp.supabase.co
+SUPABASE_PUBLISHABLE_KEY=sb_publishable_...
+```
 
 Nunca uses `service_role` o una secret key dentro del APK.
 
